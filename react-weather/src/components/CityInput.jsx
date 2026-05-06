@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CityInput = () => {
+const CityInput = ({onSearch}) => {
   const [city, setCity] = useState("");
   const handleSubmit = () => {};
 
@@ -16,7 +16,7 @@ const CityInput = () => {
         onChange={(e) => setCity(e.target.value)}
         required
       />
-      <button type="submit" onClick={handleSubmit}>
+      <button onClick={onSearch(city)}>
         Search
       </button>
     </form>

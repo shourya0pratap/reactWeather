@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "./components/Hero";
-import CityInput from "./components/CityInput";
+import LayoutWrapper from "./components/LayoutWrapper";
 
 const App = () => {
   return (
     <>
       <Hero />
-      <CityInput/>
+      <LayoutWrapper/>
     </>
   );
 };
